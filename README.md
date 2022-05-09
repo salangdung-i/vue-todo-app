@@ -1,18 +1,12 @@
 # Vue Todo App
 
-> A Vue.js project
+# 더 알아보기
 
-## Build Setup
+LocalStorage APIS
 
-```bash
-# install dependencies
-npm install
+- setItem() API
+- removeItem() API
+- splice() API
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+trim API
+디자인 패턴 : 단일 책임 원칙
