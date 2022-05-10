@@ -28,4 +28,8 @@ export default {
   color: #e20303;
   display: black;
 }
+
+.clearAllContainer:hover {
+  transform: scale(1.1);
+}
 </style>

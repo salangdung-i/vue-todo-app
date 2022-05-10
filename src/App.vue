@@ -3,7 +3,7 @@
     <TodoHeader></TodoHeader>
     <TodoInput v-on:addTodo="addTodo"></TodoInput>
     <TodoList v-bind:propsdata="todoItems" @removeTodo="removeTodo"></TodoList>
-    <TodoFooter v-bind:removeAll="clearAll"></TodoFooter>
+    <TodoFooter v-on:removeAll="clearAll"></TodoFooter>
   </div>
 </template>
 
@@ -30,11 +30,13 @@ export default {
   // 사용하는 함수들을 모아놓은 method 영역
   methods: {
     addTodo(todoItem) {
+      console.log("+ 클릭");
       // 로컬 스토리지에서 데이터를 추가하는 로직
       localStorage.setItem(todoItem, todoItem);
       this.todoItems.push(todoItem);
     },
     clearAll() {
+      console.log("clearAll");
       localStorage.clear();
       this.todoItems = [];
     },
