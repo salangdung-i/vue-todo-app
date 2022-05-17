@@ -17,3 +17,8 @@ vue tag
 
 - v-bind => :
 - v-bind vs v-on
+
+- 개선 사항 & 보충
+
+1. localstorage에 loglevel:webpack-dev-server 출력되는 현상
+2. v-? 태그들에 대한 공부
